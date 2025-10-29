@@ -1,0 +1,259 @@
+%-------------------------
+% Resume in Latex
+% Author : Caleb Aguirre-Leon
+% Based off of: https://github.com/jakegut/resume/tree/master
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{3.60004pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\small
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small{#1}} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeObjectiveHeading}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-10pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    {\Large \textsc{Caleb Aguirre-Leon}} \\ \vspace{3pt}
+    \small
+    \hspace{.5pt}  \href{mailto:calebaguirreleon@gmail.com}{\faEnvelope  \hspace{0.125em} calebaguirreleon@gmail.com} \quad
+    \hspace{.5pt}  \href{https://www.linkedin.com/in/caleb-aguirre-leon/}{\faLinkedin \hspace{0.125em} https://www.linkedin.com/in/caleb-aguirre-leon/} \quad
+    \hspace{.5pt}  \href{https://github.com/lementknight}{\faGithub \hspace{0.125em} https://github.com/lementknight}
+\end{center}
+
+%----------- EDUCATION -----------
+\section{\textbf{EDUCATION:}}
+  \resumeSubHeadingListStart
+    \resumeEducationHeading
+      {Syracuse University
+      }{Syracuse, New York}
+      {B.S. in Computer Science, Minor Degree in Mathematics}{Expected Graduation December 2025}
+  \resumeSubHeadingListEnd
+
+%----------- Personal Summary -----------
+
+\section{\textbf{PERSONAL SUMMARY:}}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        {NYC-based software engineer with production-level experience supporting enterprise clients including Google and IBM} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{\textbf{SKILLS:}}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Languages:}{ Python, Go, Java, C, HTML, CSS, JavaScript, Latex, Markdown.} \\ \vspace{3pt}
+        \textbf{Technologies:}{ Google Cloud Platform, Google Firebase, Microsoft Visual Studio Code, Google Suite, GitHub, GitHub Actions, GitBook, Git, Bazel, Hugo, Flask, Jinja, MySQL, Nginx, Prometheus, Grafana.} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- RELEVANT WORK EXPERIENCE -----------
+
+\section{\textbf{RELEVANT WORK EXPERIENCE:}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Project Manager}, Innovate Orange (BugBot), Remote, New York}{March 2025 \textbf{--} August 2025}{}{}
+        \resumeItemListStart
+            \resumeItem{Led 10-developer team, conducting weekly sprints and managing feature lifecycle, resulting in 80\% increase in on-time deliveries and 100\% improvement in code quality through comprehensive PR reviews and mentorship.}
+            \resumeItem{Architected production-ready Discord bot using Python and Discord.py, implementing automated welcome messages and GitHub webhook integration, resulting in 70\% increase in user engagement.}
+            \resumeItem{Led DevOps initiatives, establishing multi-environment deployment strategy on Google Cloud Platform and implementing CI/CD pipelines, reducing deployment time by 100\% and improving release reliability by 85\%.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Site Reliability Engineering Intern}, Google, New York, NY}{May 2024 \textbf{--} August 2024}{}{}
+        \resumeItemListStart
+        \resumeItem{Improved Monarch monitoring system release velocity by 80\% through implementing granular software release freeze controls, reducing deployment downtime and enabling more efficient rollout management for Google's planet-scale infrastructure.}
+        \resumeItem{Designed and implemented binary-to-subsystem relationship modeling system for 30+ production binaries, improving deployment precision by 100\% and reducing average blast radius during release freezes by 80\%.}
+        \resumeItem{Engineered Go and Bazel-based automated configuration generation tool, reducing manual overhead by 60\% and facilitating seamless integration with Google's rollout infrastructure; additionally, created comprehensive documentation to ensure widespread team adoption.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+    {\textbf{Production Engineering Fellow}, MLH Fellowship and Meta, Remote, New York}{June 2023 \textbf{--} September 2023}{}{}
+        \resumeItemListStart
+            \resumeItem{Engineered full-stack open-source portfolio website template with Python, Flask, Jinja, MySQL, and Nginx, incorporating comprehensive unittest coverage and demonstrating 100\% improvement in Production Engineering proficiency.}
+            \resumeItem{Implemented CI/CD workflows and set up monitoring with Prometheus and Grafana, reducing deployment time by 100\% and improving system reliability by 80\% through proactive alerting and visualization.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+    {\textbf{Quantum Open-Source Software Intern}, Qubit by Qubit and IBM Quantum, Manhattan, New York}{June 2022 \textbf{--} August 2022}{}{}
+        \resumeItemListStart
+            \resumeItem{Engineered CLI tool for Qiskit Red Queen Benchmarking Suite, boosting benchmarking coverage by 80\% and optimizing quantum circuits with Pylint, Black, and Pytest, benefiting 100+ IBM Qiskit developers}
+            \resumeItem{Executed 10 comprehensive code reviews for IBM's Qiskit Red Queen Benchmarking Suite, elevating code quality by 75\% through detailed analysis of algorithmic efficiency, code structure, and adherence to quantum computing best practices.}
+            \resumeItem{Presented quantum computing research findings to 30 program participants and leadership, achieving a perfect 10/10 average feedback score for clarity and content, while enhancing program-wide understanding of advanced quantum concepts.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{\textbf{WORK EXPERIENCE:}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Event Lead}, Orange After Dark (OAD), Syracuse, New York}{January 2024 \textbf{--} May 2025}{}{}
+        \resumeItemListStart
+            \resumeItem{Led late-night programming events averaging 200+ attendees, improving student satisfaction by 30\% through strategic planning and effective resource management, resulting in 25\% increase in repeat attendance and led weekly meetings with 12 staff members, improving event preparation efficiency by 80\%}
+        \resumeItemListEnd
+
+    \resumeSubheading
+    {\textbf{Physics Coach}, Physics Department, Syracuse, New York}{January 2023 \textbf{--} May 2024}{}{}
+        \resumeItemListStart
+            \resumeItem{Co-taught bi-weekly physics recitations and weekly lab sessions for 165 students across 6 classes, improving average test scores by 58\% through targeted guidance, interactive work packets, and hands-on laboratory instruction.}
+        \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%----------- LEADERSHIP/ACTIVITIES -----------
+
+\section{\textbf{LEADERSHIP/ACTIVITIES:}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {\textbf{Co-Sponsorship Chair}, CuseHacks (Innovate Orange), Syracuse, New York }{January 2024 \textbf{--} May 2025}{}{}
+        \resumeItemListStart
+            \resumeItem{Spearheaded fundraising efforts for CuseHacks' bi-annual hackathon, securing \$7,500 through targeted corporate outreach and leveraging Notion to streamline agreement processes and deadline management.}
+            \resumeItem{Led weekly planning meetings with 20 e-board members, overseeing logistics for bi-annual hackathons and weekly workshops, resulting in 80\% increase in event attendance and 75\% improvement in participant satisfaction scores.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+    {\textbf{President}, Syracuse University Dean's Advisory Panel, Syracuse, New York}{August 2023 \textbf{--} May 2025}{}{}
+        \resumeItemListStart
+            \resumeItem{Led 9-member panel, managing 3 committees and executing weekly community outreach events, resulting in 40\% increase in student engagement and implementation of 5 new initiatives to enhance engineering student experience.}
+            \resumeItem{Gathered and presented student body concerns to the Dean of Engineering monthly, leading to the implementation of 2 new policies and 5 improvements in student organization resources, benefiting 90\% of engineering students.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\end{document}
