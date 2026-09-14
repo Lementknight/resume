@@ -4,9 +4,8 @@
 *.synctex.gz
 *.fdb_latexmk
 *.log
-*.pdf
 .DS_Store
 masterDoc/*
 old_resumes/*
 current_resume/*
-.vscode/
+.vscode/*
